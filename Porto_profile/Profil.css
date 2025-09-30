@@ -1,5 +1,6 @@
 .jumbotron {
   background-color: rgb(193, 185, 185);
+  border-radius: 10px;
 }
 .jumbotron img {
   border: 5px solid white;
@@ -16,6 +17,7 @@ section {
   color: white;
   padding-top: 30px;
   background-color: grey;
+  border-radius: 10px;
 }
 .portofolio hr {
   margin-bottom: 50px;
