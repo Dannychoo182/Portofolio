@@ -107,6 +107,29 @@ p {
 }
 /* akhir workingspace */
 
+/* testimonial */
+.testimonial,
+h6 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.figure,
+img {
+  margin-top: 20px;
+}
+
+.figure-caption {
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px !important;
+}
+
+/* akhir testimonial */
+
 /* UTILLITY */
 .tombol {
   text-transform: uppercase;
@@ -168,4 +191,12 @@ p {
     text-align: left;
   }
   /* akhir-workingspace */
+
+  /* testimonial */
+
+  .testimonial,
+  h6 {
+    font-size: 32px;
+  }
+  /* akhir-testimonial */
 }
