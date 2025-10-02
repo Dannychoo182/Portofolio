@@ -140,7 +140,7 @@ body {
 /* container */
 .container {
   background-color: white;
-  width: 80%;
+  width: 90%;
   margin: auto;
   border: 5px solid skyblue;
   border-radius: 10px;
@@ -169,7 +169,7 @@ a {
   color: salmon;
 }
 
-a:hover {
+header a:hover {
   background-color: blue;
   color: white;
 }
@@ -194,8 +194,12 @@ a:hover {
 /* akhir hero-image */
 
 /* Content */
-.content {
+
+/* main */
+.main {
   padding: 20px;
+  width: 60%;
+  text-align: justify;
 }
 
 .judul-2 {
@@ -207,10 +211,18 @@ a:hover {
   margin-top: 10px;
 }
 
-.content p {
+.main p {
   letter-spacing: 2px;
+  margin-top: 10px;
 }
+/* akhir main */
 
+/* sidebar */
+
+/* akhir sidebar */
+.sidebar img {
+  width: 100px;
+}
 /* akhir content */
 
 /* footer */
@@ -226,3 +238,23 @@ a:hover {
   padding: 20px;
 }
 /* akhir-footer */
+
+/* clear fix */
+
+.cf:before,
+.cf:after {
+  content: ' '; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
