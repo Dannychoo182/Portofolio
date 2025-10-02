@@ -1,0 +1,87 @@
+/* jumbotron */
+
+.jumbotron {
+  padding: 2rem 1rem;
+  background-color: #e2edff;
+  margin-top: 50px;
+}
+
+.jumbotron h1 {
+  text-shadow: 1px 1px 1px black;
+}
+
+/* jumbotron-akhir */
+
+/* About */
+.about h2 {
+  margin-top: 60px;
+}
+.container p {
+  margin-top: 30px;
+}
+
+.container h2 {
+  font-weight: 200;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* akhir-About */
+
+/* project */
+.project h2 {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.project {
+  background-color: #e2edff;
+}
+
+.project p {
+  text-align: center;
+}
+
+.project .col {
+  margin-top: 40px;
+}
+.project .row {
+  justify-content: center;
+}
+
+/* form */
+
+.form h2 {
+  margin-bottom: 30px;
+}
+/* form akhir */
+
+/* wave */
+.wave {
+  margin-top: 50px;
+}
+
+/* footer */
+
+footer {
+  background-color: #0414f3;
+  padding: 10px;
+}
+
+footer h5 {
+  font-size: 14px;
+  font-weight: 200;
+  color: white;
+}
+
+footer a {
+  font-size: 14px;
+  font-weight: 200;
+  color: white;
+  text-decoration: none;
+}
+
+/* footer */
+
+/* akhir project */
+
+/* HP VERSION */
