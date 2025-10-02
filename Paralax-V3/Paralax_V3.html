@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epicure | Fine Dining Experience</title>
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="Paralax_v3.css" />
+    <!-- css -->
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"> <i class="fas fa-utensils me-2"></i>Danny </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chefs">Chefs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reservation">Reservation</a>
+            </li>
+          </ul>
+          <a href="#reservation" class="btn btn-reservation ms-3">Book a Table</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="parallax-bg"></div>
+      <div class="parallax-overlay"></div>
+      <div class="container hero-content">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h1 class="hero-title">Danny Restaurant</h1>
+            <div class="hero-divider"></div>
+            <p class="hero-subtitle">Exquisite Dining Experience in the Heart of the City</p>
+            <a href="#reservation" class="btn btn-reservation btn-lg mt-4"> <i class="fas fa-calendar-check me-2"></i>Reserve Your Table </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <div class="about-bg"></div>
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title">Our Story</h2>
+            <p class="lead">Established in 2005, Epicure has been serving exceptional cuisine with a focus on fresh, locally sourced ingredients.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <h4>Fresh Ingredients</h4>
+              <p>We source our ingredients from local farms and trusted suppliers to ensure the highest quality and freshness.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-mortar-pestle"></i>
+              </div>
+              <h4>Expert Preparation</h4>
+              <p>Our chefs combine traditional techniques with modern innovation to create unforgettable dining experiences.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-wine-glass-alt"></i>
+              </div>
+              <h4>Fine Wines</h4>
+              <p>Our sommelier has curated an extensive wine list to perfectly complement our culinary creations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu-section">
+      <div class="menu-bg"></div>
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title">Our Menu</h2>
+            <p class="lead">Discover our carefully crafted dishes made with the finest ingredients.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Salad" class="menu-img" />
+              <div class="menu-content">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="menu-title">Mediterranean Salad</h4>
+                  <span class="menu-price">$14</span>
+                </div>
+                <p class="menu-description">Fresh greens with olives, feta cheese, tomatoes, and our signature dressing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Pasta" class="menu-img" />
+              <div class="menu-content">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="menu-title">Truffle Pasta</h4>
+                  <span class="menu-price">$24</span>
+                </div>
+                <p class="menu-description">Handmade pasta with black truffle, wild mushrooms, and parmesan cream sauce.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="menu-card">
+              <img src="../asset/loija-nguyen-NYBnDWeOX2c-unsplash.jpg" alt="Steak" class="menu-img" />
+              <div class="menu-content">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="menu-title">Filet Mignon</h4>
+                  <span class="menu-price">$38</span>
+                </div>
+                <p class="menu-description">Premium cut of beef with red wine reduction, roasted vegetables, and mashed potatoes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Salmon" class="menu-img" />
+              <div class="menu-content">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="menu-title">Grilled Salmon</h4>
+                  <span class="menu-price">$28</span>
+                </div>
+                <p class="menu-description">Atlantic salmon with lemon butter sauce, asparagus, and herbed rice.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2065&q=80" alt="Dessert" class="menu-img" />
+              <div class="menu-content">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="menu-title">Chocolate Soufflé</h4>
+                  <span class="menu-price">$12</span>
+                </div>
+                <p class="menu-description">Warm chocolate soufflé with vanilla ice cream and berry compote.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="menu-card">
+              <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Cocktail" class="menu-img" />
+              <div class="menu-content">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="menu-title">Signature Cocktails</h4>
+                  <span class="menu-price">$14</span>
+                </div>
+                <p class="menu-description">Handcrafted cocktails made with premium spirits and fresh ingredients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery-section">
+      <div class="gallery-bg"></div>
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title">Gallery</h2>
+            <p class="lead">Take a visual journey through our restaurant and culinary creations.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Restaurant Interior" class="gallery-img" />
+              <div class="gallery-overlay">
+                <h4>Elegant Dining Room</h4>
+                <p>Our main dining area with sophisticated ambiance</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Bar Area" class="gallery-img" />
+              <div class="gallery-overlay">
+                <h4>Luxury Bar</h4>
+                <p>Perfect spot for pre-dinner cocktails</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Dish Presentation" class="gallery-img" />
+              <div class="gallery-overlay">
+                <h4>Artful Presentation</h4>
+                <p>Every dish is a work of art</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHEF SECTION -->
+    <section id="chefs" class="chef-section">
+      <div class="chef-bg"></div>
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title">Meet Our Chefs</h2>
+            <p class="lead">Our talented culinary team brings creativity and passion to every dish.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="chef-card">
+              <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Chef Maria" class="chef-img" />
+              <h4>Maria Rodriguez</h4>
+              <p class="text-gold">Executive Chef</p>
+              <p>With over 15 years of experience in fine dining, Chef Maria brings innovative techniques and global flavors to our kitchen.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="chef-card">
+              <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Chef James" class="chef-img" />
+              <h4>James Wilson</h4>
+              <p class="text-gold">Sous Chef</p>
+              <p>Specializing in French cuisine, Chef James brings precision and artistry to every plate that leaves our kitchen.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="chef-card">
+              <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Chef Sofia" class="chef-img" />
+              <h4>Sofia Chen</h4>
+              <p class="text-gold">Pastry Chef</p>
+              <p>With a background in Parisian patisseries, Chef Sofia creates desserts that are both visually stunning and delicious.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION SECTION -->
+    <section id="reservation" class="reservation-section">
+      <div class="reservation-bg"></div>
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title">Make a Reservation</h2>
+            <p class="lead">Book your table for an unforgettable dining experience.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="reservation-form">
+              <form>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input type="tel" class="form-control" placeholder="Phone Number" required />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="number" class="form-control" placeholder="Number of Guests" min="1" max="20" required />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input type="date" class="form-control" required />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="time" class="form-control" required />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" rows="4" placeholder="Special Requests"></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-reservation btn-lg"><i class="fas fa-calendar-check me-2"></i>Book Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h4 class="mb-3"><i class="fas fa-utensils me-2"></i>Danny</h4>
+            <p class="mb-4">Exquisite dining experience with a focus on fresh ingredients and innovative cuisine.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-tripadvisor"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h5 class="mb-3">Contact Info</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>123 Gourmet Avenue, Culinary District</li>
+              <li class="mb-2"><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</li>
+              <li class="mb-2"><i class="fas fa-envelope me-2"></i>info@epicure.com</li>
+              <li class="mb-2"><i class="fas fa-clock me-2"></i>Mon-Sun: 5:00 PM - 11:00 PM</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="mb-3">Newsletter</h5>
+            <p>Subscribe to our newsletter for updates and special offers.</p>
+            <form>
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your email address" />
+                <button class="btn btn-reservation" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="my-4 bg-light opacity-25" />
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">&copy; 2025 created by I GEDE DENY PRIYATNA.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+            <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button class="scroll-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Navbar background change on scroll
+      window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // Scroll to top button
+      const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 300) {
+          scrollToTopBtn.classList.add('active');
+        } else {
+          scrollToTopBtn.classList.remove('active');
+        }
+      });
+
+      scrollToTopBtn.addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 70,
+              behavior: 'smooth',
+            });
+          }
+        });
+      });
+
+      // Parallax effect
+      window.addEventListener('scroll', function () {
+        const scrolled = window.pageYOffset;
+        const parallaxBg = document.querySelector('.parallax-bg');
+        if (parallaxBg) {
+          parallaxBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+        }
+      });
+
+      // Update active nav link on scroll
+      window.addEventListener('scroll', function () {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        let current = '';
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - 100) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      // Animation on scroll
+      function animateOnScroll() {
+        const elements = document.querySelectorAll('.feature-card, .menu-card, .chef-card');
+
+        elements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.classList.add('animate__animated', 'animate__fadeInUp');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', animateOnScroll);
+      // Initial check
+      animateOnScroll();
+    </script>
+  </body>
+</html>
