@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Parallax & Scroll Effects</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="Paralax_V2.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"> <i class="fas fa-cube me-2"></i>Danny </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="parallax-bg"></div>
+      <div class="parallax-overlay"></div>
+      <div class="container hero-content">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h1 class="hero-title">Portofolio Website</h1>
+            <p class="hero-subtitle">We design and develop stunning websites with cutting-edge technology and creative solutions</p>
+            <a href="#about" class="btn btn-gradient"> <i class="fas fa-rocket me-2"></i>Explore More </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <div class="about-bg"></div>
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title" data-aos="fade-up">About Us</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="200">We are a creative team passionate about building digital solutions that make a difference.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-card text-center">
+              <div class="feature-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h4>Innovative Solutions</h4>
+              <p>We create cutting-edge digital experiences that push boundaries and deliver results.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-card text-center">
+              <div class="feature-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4>Clean Code</h4>
+              <p>Our development process focuses on writing clean, efficient, and maintainable code.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="feature-card text-center">
+              <div class="feature-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h4>Fast Performance</h4>
+              <p>We optimize every aspect of your website for maximum speed and performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="200">We offer a comprehensive range of digital services to help your business grow.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card text-center">
+              <div class="service-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h4>Web Design</h4>
+              <p>We create visually stunning and user-friendly designs that align with your brand identity.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card text-center">
+              <div class="service-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h4>Web Development</h4>
+              <p>We build responsive, fast, and secure websites using the latest technologies and frameworks.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-card text-center">
+              <div class="service-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <h4>E-Commerce</h4>
+              <p>We develop online stores with secure payment systems and intuitive user interfaces.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-card text-center">
+              <div class="service-icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <h4>SEO Optimization</h4>
+              <p>We optimize websites to rank higher in search engines and attract more organic traffic.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-card text-center">
+              <div class="service-icon">
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <h4>Digital Marketing</h4>
+              <p>We create and execute digital marketing strategies to increase your online presence.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="800">
+            <div class="service-card text-center">
+              <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h4>App Development</h4>
+              <p>We develop mobile applications for iOS and Android platforms with intuitive interfaces.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="portfolio-bg"></div>
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title" data-aos="fade-up">Our Portfolio</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="200">Check out some of our recent projects that we're proud of.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="portfolio-item">
+              <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Project 1" class="portfolio-img" />
+              <div class="portfolio-overlay">
+                <h4>E-Commerce Platform</h4>
+                <p>Modern online store with advanced features</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="portfolio-item">
+              <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Project 2" class="portfolio-img" />
+              <div class="portfolio-overlay">
+                <h4>Corporate Website</h4>
+                <p>Professional website for a global company</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="portfolio-item">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" alt="Project 3" class="portfolio-img" />
+              <div class="portfolio-overlay">
+                <h4>Mobile Application</h4>
+                <p>Cross-platform app for iOS and Android</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="200">Have a project in mind? Let's discuss how we can help you.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <form>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Subject" required />
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-gradient"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h4 class="mb-3"><i class="fas fa-cube me-2"></i>Danny</h4>
+            <p class="mb-4">Creating stunning digital experiences with cutting-edge technology and creative solutions.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#home" class="text-light text-decoration-none">Home</a></li>
+              <li class="mb-2"><a href="#about" class="text-light text-decoration-none">About</a></li>
+              <li class="mb-2"><a href="#services" class="text-light text-decoration-none">Services</a></li>
+              <li class="mb-2"><a href="#portfolio" class="text-light text-decoration-none">Portfolio</a></li>
+              <li class="mb-2"><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-3">Services</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Web Design</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Web Development</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">E-Commerce</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">SEO Optimization</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">App Development</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-3">Contact Info</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Jln. Raya Kerobokan Badung</li>
+              <li class="mb-2"><i class="fas fa-phone me-2"></i>+62 89 686 388 320</li>
+              <li class="mb-2"><i class="fas fa-envelope me-2"></i>info@nexus.com</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4 bg-light opacity-25" />
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">&copy; 2025 create by I GEDE DENY PRIYATNA</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+            <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+      });
+
+      // Navbar background change on scroll
+      window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // Scroll to top button
+      const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 300) {
+          scrollToTopBtn.classList.add('active');
+        } else {
+          scrollToTopBtn.classList.remove('active');
+        }
+      });
+
+      scrollToTopBtn.addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 70,
+              behavior: 'smooth',
+            });
+          }
+        });
+      });
+
+      // Parallax effect for hero section
+      window.addEventListener('scroll', function () {
+        const scrolled = window.pageYOffset;
+        const parallaxBg = document.querySelector('.parallax-bg');
+        if (parallaxBg) {
+          parallaxBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+        }
+      });
+    </script>
+  </body>
+</html>
