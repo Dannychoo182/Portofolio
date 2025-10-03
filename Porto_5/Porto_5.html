@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DannyStore - Premium Online Shop</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="Porto_5.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Danny Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#categories">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <div class="me-3">
+              <div class="theme-toggle" id="themeToggle"></div>
+            </div>
+            <div class="input-group me-3" style="max-width: 300px">
+              <input type="text" class="form-control" placeholder="Search products..." />
+              <button class="btn btn-primary-custom" type="button">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+            <div class="position-relative me-3">
+              <button class="btn btn-outline-custom" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                <i class="bi bi-cart3"></i>
+              </button>
+              <span class="cart-badge">3</span>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-outline-custom dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <i class="bi bi-person-circle"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">My Account</a></li>
+                <li><a class="dropdown-item" href="#">Orders</a></li>
+                <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Your Cart</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="cart-item">
+          <div class="d-flex justify-content-between align-items-start">
+            <div class="d-flex">
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Product"
+                class="rounded me-3"
+                width="60"
+                height="60"
+              />
+              <div>
+                <h6 class="mb-1">Premium Running Shoes</h6>
+                <p class="mb-0 text-muted">Size: 42</p>
+                <p class="mb-0 text-primary fw-bold">$129.99</p>
+              </div>
+            </div>
+            <button class="btn btn-sm btn-outline-danger">
+              <i class="bi bi-trash"></i>
+            </button>
+          </div>
+          <div class="d-flex align-items-center mt-2">
+            <button class="btn btn-sm btn-outline-secondary">-</button>
+            <span class="mx-2">1</span>
+            <button class="btn btn-sm btn-outline-secondary">+</button>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <div class="d-flex justify-content-between align-items-start">
+            <div class="d-flex">
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1999&q=80"
+                alt="Product"
+                class="rounded me-3"
+                width="60"
+                height="60"
+              />
+              <div>
+                <h6 class="mb-1">Smart Watch Series 5</h6>
+                <p class="mb-0 text-muted">Color: Black</p>
+                <p class="mb-0 text-primary fw-bold">$249.99</p>
+              </div>
+            </div>
+            <button class="btn btn-sm btn-outline-danger">
+              <i class="bi bi-trash"></i>
+            </button>
+          </div>
+          <div class="d-flex align-items-center mt-2">
+            <button class="btn btn-sm btn-outline-secondary">-</button>
+            <span class="mx-2">2</span>
+            <button class="btn btn-sm btn-outline-secondary">+</button>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="d-flex justify-content-between mb-2">
+            <span>Subtotal:</span>
+            <span>$629.97</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>Shipping:</span>
+            <span>$9.99</span>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <span class="fw-bold">Total:</span>
+            <span class="fw-bold">$639.96</span>
+          </div>
+          <button class="btn btn-primary-custom w-100">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="parallax-bg"></div>
+      <div class="parallax-overlay"></div>
+      <div class="container hero-content">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="hero-title">Premium Products <span class="text-gradient">Delivered to You</span></h1>
+            <p class="lead mb-4">Discover the latest trends in fashion, electronics, and home essentials. Quality products with fast shipping and excellent customer service.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#products" class="btn btn-primary-custom">Shop Now</a>
+              <a href="#categories" class="btn btn-outline-custom">Browse Categories</a>
+            </div>
+            <div class="mt-4">
+              <div class="d-flex flex-wrap gap-4">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-truck me-2 text-primary"></i>
+                  <span>Free Shipping Over $50</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-shield-check me-2 text-primary"></i>
+                  <span>Secure Payment</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-arrow-clockwise me-2 text-primary"></i>
+                  <span>30-Day Returns</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center mt-5 mt-lg-0">
+            <div class="position-relative d-inline-block">
+              <div class="floating">
+                <img
+                  src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Shopping"
+                  class="img-fluid rounded-3 shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="section-padding">
+      <div class="container">
+        <h2 class="section-title text-center">Shop by Category</h2>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="category-card">
+              <div class="category-icon">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h4>Electronics</h4>
+              <p class="mb-0">Latest gadgets and devices</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="category-card">
+              <div class="category-icon">
+                <i class="bi bi-bag"></i>
+              </div>
+              <h4>Fashion</h4>
+              <p class="mb-0">Trendy clothes and accessories</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="category-card">
+              <div class="category-icon">
+                <i class="bi bi-house"></i>
+              </div>
+              <h4>Home & Garden</h4>
+              <p class="mb-0">Everything for your home</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="category-card">
+              <div class="category-icon">
+                <i class="bi bi-controller"></i>
+              </div>
+              <h4>Sports & Outdoors</h4>
+              <p class="mb-0">Gear for active lifestyle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="section-padding bg-light">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="section-title text-dark">Featured Products</h2>
+          <a href="#" class="btn btn-outline-custom">View All</a>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Running Shoes" />
+                <span class="product-badge">Sale</span>
+              </div>
+              <div class="p-3">
+                <h5 class="mb-2">Premium Running Shoes</h5>
+                <div class="rating mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span class="ms-1 text-muted">(128)</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price">$129.99</span>
+                    <span class="original-price ms-2">$159.99</span>
+                  </div>
+                  <button class="btn btn-primary-custom btn-sm"><i class="bi bi-cart-plus"></i> Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1999&q=80" alt="Smart Watch" />
+              </div>
+              <div class="p-3">
+                <h5 class="mb-2">Smart Watch Series 5</h5>
+                <div class="rating mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span class="ms-1 text-muted">(256)</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price">$249.99</span>
+                  </div>
+                  <button class="btn btn-primary-custom btn-sm"><i class="bi bi-cart-plus"></i> Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Headphones" />
+                <span class="product-badge">New</span>
+              </div>
+              <div class="p-3">
+                <h5 class="mb-2">Wireless Headphones</h5>
+                <div class="rating mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="ms-1 text-muted">(87)</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price">$89.99</span>
+                  </div>
+                  <button class="btn btn-primary-custom btn-sm"><i class="bi bi-cart-plus"></i> Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80" alt="Smartphone" />
+              </div>
+              <div class="p-3">
+                <h5 class="mb-2">Latest Smartphone</h5>
+                <div class="rating mb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span class="ms-1 text-muted">(342)</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price">$799.99</span>
+                  </div>
+                  <button class="btn btn-primary-custom btn-sm"><i class="bi bi-cart-plus"></i> Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offer Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="custom-card">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h2 class="mb-3">Summer Sale - Up to 50% Off</h2>
+              <p class="mb-4">Don't miss our biggest sale of the year! Shop now and save on selected items.</p>
+              <div class="d-flex align-items-center mb-4">
+                <div class="text-center me-4">
+                  <div class="fs-2 fw-bold text-primary">05</div>
+                  <div class="text-muted">Days</div>
+                </div>
+                <div class="text-center me-4">
+                  <div class="fs-2 fw-bold text-primary">12</div>
+                  <div class="text-muted">Hours</div>
+                </div>
+                <div class="text-center me-4">
+                  <div class="fs-2 fw-bold text-primary">45</div>
+                  <div class="text-muted">Minutes</div>
+                </div>
+                <div class="text-center">
+                  <div class="fs-2 fw-bold text-primary">30</div>
+                  <div class="text-muted">Seconds</div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary-custom">Shop the Sale</a>
+            </div>
+            <div class="col-lg-6 text-center">
+              <img
+                src="https://images.unsplash.com/photo-1607082349566-187342175e2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="Special Offer"
+                class="img-fluid rounded-3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <h2 class="section-title text-center text-dark">What Our Customers Say</h2>
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="custom-card text-center">
+              <div class="rating mb-3 justify-content-center">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-3">"The quality of products is outstanding and the delivery was super fast. Will definitely shop here again!"</p>
+              <div class="d-flex align-items-center justify-content-center">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                  alt="Customer"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                />
+                <div>
+                  <h6 class="mb-0">Sarah Johnson</h6>
+                  <small class="text-muted">New York</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="custom-card text-center">
+              <div class="rating mb-3 justify-content-center">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <p class="mb-3">"Excellent customer service! They helped me find exactly what I was looking for and the product exceeded my expectations."</p>
+              <div class="d-flex align-items-center justify-content-center">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Customer"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                />
+                <div>
+                  <h6 class="mb-0">Michael Chen</h6>
+                  <small class="text-muted">Los Angeles</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="custom-card text-center">
+              <div class="rating mb-3 justify-content-center">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="mb-3">"Fast shipping and the product was exactly as described. The packaging was also very secure. Highly recommended!"</p>
+              <div class="d-flex align-items-center justify-content-center">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Customer"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                />
+                <div>
+                  <h6 class="mb-0">Danny_choo</h6>
+                  <small class="text-muted">Bali</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="newsletter-section rounded-3">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h3 class="mb-3">Subscribe to Our Newsletter</h3>
+              <p class="mb-0">Get the latest updates on new products and upcoming sales</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your email address" />
+                <button class="btn btn-dark" type="button">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h4 class="mb-3">Danny_Store</h4>
+            <p class="mb-4">Your trusted online shopping destination for quality products at affordable prices.</p>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-decoration-none">
+                <i class="bi bi-facebook fs-5"></i>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <i class="bi bi-twitter fs-5"></i>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <i class="bi bi-instagram fs-5"></i>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <i class="bi bi-pinterest fs-5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">Shop</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-decoration-none">All Products</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none">Featured Items</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none">New Arrivals</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none">On Sale</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">Support</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-decoration-none">Contact Us</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none">FAQ</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none">Shipping Info</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none">Returns</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <h5 class="mb-3">Contact Info</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="bi bi-geo-alt me-2"></i>
+                Kesambi street, Kerobokan, Badung, Bali
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-telephone me-2"></i>
+                +62 89 686 388 320
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-envelope me-2"></i>
+                info@dannystore.com
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-top pt-4 mt-4 text-center">
+          <p class="mb-0">&copy; 2025 created by I GEDE DENY PRIYATNA.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Dark Mode Toggle
+      const themeToggle = document.getElementById('themeToggle');
+      const htmlElement = document.documentElement;
+
+      // Check for saved theme preference or respect OS preference
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        htmlElement.setAttribute('data-bs-theme', 'dark');
+        themeToggle.classList.add('active');
+      } else {
+        htmlElement.setAttribute('data-bs-theme', 'light');
+        themeToggle.classList.remove('active');
+      }
+
+      // Toggle theme
+      themeToggle.addEventListener('click', () => {
+        if (htmlElement.getAttribute('data-bs-theme') === 'light') {
+          htmlElement.setAttribute('data-bs-theme', 'dark');
+          themeToggle.classList.add('active');
+          localStorage.theme = 'dark';
+        } else {
+          htmlElement.setAttribute('data-bs-theme', 'light');
+          themeToggle.classList.remove('active');
+          localStorage.theme = 'light';
+        }
+      });
+
+      // Navbar background change on scroll
+      window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // Parallax effect
+      window.addEventListener('scroll', function () {
+        const scrolled = window.pageYOffset;
+        const parallaxBg = document.querySelector('.parallax-bg');
+        if (parallaxBg) {
+          parallaxBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+        }
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 70,
+              behavior: 'smooth',
+            });
+          }
+        });
+      });
+
+      // Update active nav link on scroll
+      window.addEventListener('scroll', function () {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        let current = '';
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - 100) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      // Add to cart functionality
+      document.querySelectorAll('.btn-primary-custom').forEach((button) => {
+        if (button.textContent.includes('Add')) {
+          button.addEventListener('click', function () {
+            const badge = document.querySelector('.cart-badge');
+            let count = parseInt(badge.textContent);
+            badge.textContent = count + 1;
+
+            // Show notification
+            const toast = document.createElement('div');
+            toast.className = 'position-fixed bottom-0 end-0 p-3';
+            toast.innerHTML = `
+                        <div class="toast show" role="alert">
+                            <div class="toast-header">
+                                <strong class="me-auto">NexusStore</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                            </div>
+                            <div class="toast-body">
+                                Product added to cart successfully!
+                            </div>
+                        </div>
+                    `;
+            document.body.appendChild(toast);
+
+            // Remove toast after 3 seconds
+            setTimeout(() => {
+              toast.remove();
+            }, 3000);
+          });
+        }
+      });
+
+      // Countdown timer for special offer
+      function updateCountdown() {
+        const daysElement = document.querySelector('.fs-2.fw-bold.text-primary');
+        if (daysElement) {
+          // This is a static countdown for demonstration
+          // In a real application, you would calculate the actual time remaining
+        }
+      }
+
+      // Initialize countdown
+      updateCountdown();
+    </script>
+  </body>
+</html>
